@@ -1,0 +1,151 @@
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.dark-section {
+  background-color: #b3edff;
+}
+
+.navbar.navbar-light.navbar-expand-md {
+  height: 75px;
+  font-size: 25px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.jumbotron {
+  /*align-self: center;*/
+  text-align: center;
+  /*width: 1000px;*/
+  height: 700px;
+  background: url(../../assets/img/wallpaper.jpeg);
+  background-size: cover;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 75px;
+}
+
+.container.site-section {
+  max-width: 1500px;
+}
+
+.container.site-section {
+  background-color: #afddf1;
+}
+
+.oynak {
+  margin-top: -15px;
+}
+
+.oynak {
+  max-height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+p {
+  background-color: rgba(5, 191, 237, 0.5);
+  font-size: xx-large;
+  max-width: 1000px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.btn.btn-primary {
+  margin-bottom: 110px;
+}
+
+h1 {
+  background-color: rgba(5, 191, 237, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+.site-section h1 {
+  font-weight: normal;
+  margin-bottom: 3px;
+}
+
+.navbar.navbar-light.navbar-expand-md.fixed-top {
+  background-color: #eee;
+}
+
+#sorular {
+  margin-top: -20px;
+  background-color: #afddf1;
+}
+
+#sorular h1 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.icon.ion-android-alert {
+  font-size: 100px;
+}
+
+.container.site-section {
+  padding-top: 20px;
+}
+
+#selamlarg {
+  margin: 500px;
+  background-color: white;
+}
+
+.text-left {
+  background-color: white;
+  /*text-align: center;*/
+}
+
+svg {
+  font-size: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.row-3 h1 {
+  background-color: white;
+}
+
+.class p {
+  padding-top: 500px;
+}
+
+.row-2 h1 {
+  background-color: white;
+}
+
+.fa.fa-star {
+  font-size: 100px;
+}
+
+#welcome p {
+  font-size: 20px;
+  background-color: #afddf1;
+  margin-top: 0px;
+}
+
+img {
+  margin-top: 40px;
+  opacity: 0.85;
+}
+
+@media (max-width: 625px) {
+  .jumbotron {
+    height: 900px;
+  }
+}
+
+@media (min-width: 410px) {
+  .jumbotron {
+    padding: 50px;
+  }
+}
+
