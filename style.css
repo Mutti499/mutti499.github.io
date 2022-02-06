@@ -10,22 +10,32 @@
     left: 0;
     width: 100%;
     height:100vh;
-    background: #f5c6d0 ;
+    background: #4B77BE ;
 /*    background: linear-gradient(to right,#f5c6d0,#fff);*/
     z-index: -1;
 }
 
 nav{
+    
     display: grid;
     grid-template-columns: 10% 1fr 1fr 10%;
     min-height: 10vh;
     color:black;
     align-items:center;
+    
 }
 
-#logo{
+.logo{
     grid-column: 2/3;
-    font-size: 24px;
+    font-size: 25px;    
+}
+ 
+
+#logo2{
+    position:absolute; 
+    top:4%;
+    font-family: 'Yellowtail', cursive;
+    color: white;
 }
 
 #hamburger{
@@ -51,7 +61,8 @@ section{
     object-fit: cover;
 }
 
-.headline,.headline2 {
+.headline,.headline2,.headline3, #headline {
+    font-family: 'Sacramento', cursive;
     position: absolute;
     top: 50%;
     left: 10%;
@@ -59,4 +70,3 @@ section{
     transform: translate(-20%,-70%);
     color: white;
 }
-
