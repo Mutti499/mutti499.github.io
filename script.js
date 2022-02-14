@@ -7,6 +7,7 @@ const headline = document.querySelector('.headline')
 const headline2 = document.querySelector('.headline2')
 const headline3 = document.querySelector('.headline3')
 const content = document.querySelector('.content')
+const sociallist = document.querySelector('.sociallist')
 const tl = new TimelineMax();
 
 function myFunction(x) {
@@ -21,6 +22,7 @@ function myFunction(x) {
         .fromTo(headline,0.5,{opacity:0, y:100},{opacity:1, y:-200, x:10},'-=0.5')
 	    .fromTo(headline2,1,{opacity:0, y:100},{opacity:1, y:-100, x:10},'-=0.5')
         .fromTo(headline3,1,{opacity:0, y:100},{opacity:1, y:-70, x:10},'-=0.5')
+        .fromTo(sociallist,1,{opacity:0},{opacity:1})
         .fromTo(content,1,{opacity:0},{opacity:1})
         } 
     else { //bigger than 700
@@ -33,6 +35,7 @@ function myFunction(x) {
         .fromTo(headline,0.5,{opacity:0, y:100},{opacity:1, y:-150},'-=0.5')
         .fromTo(headline2,1,{opacity:0, y:100},{opacity:1, y:-50, x:-25})
         .fromTo(headline3,1,{opacity:0, y:100},{opacity:1, y:-25, x:-25},'-=0.5')
+        .fromTo(sociallist,1,{opacity:0},{opacity:1})
         .fromTo(content,1,{opacity:0},{opacity:1})
     }
   }
