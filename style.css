@@ -112,6 +112,11 @@ section{
 .sociallist img{
     height: 35px;
     width: auto;
+    z-index: 1;
+    transition: transform 1s;
+}
+.sociallist img:hover{
+    transform: rotate(360deg);
 }
 
 .sociallist a{
@@ -120,8 +125,9 @@ section{
     
 }
 
-.whoami{
 
+.whoami{
+    font-family: 'Montserrat', sans-serif;
     color: #333;
     font-size: 20px;
     font-weight: 300;
@@ -131,6 +137,165 @@ section{
     padding-left: 5%;
     padding-right: 5%;
 }
+
+.barbody1{
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding: 25px 30px;
+    display: grid;
+    height: 100%;
+    place-items: center;
+    width: 600px;
+    background-color: white;
+    border:10px solid #4B77BE;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.barbody1 .bar{
+    margin: 20px 0;
+}
+
+.barbody1 .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.barbody1 .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+*/
+
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    
+  }
+  ::selection{
+    color: #fff;
+    background: #6665ee;
+  }
+  .skill-barbarbody1{
+    padding: 25px 30px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+  }
+  .barbody1 .bar{
+    margin: 20px 0;
+  }
+  .barbody1 .bar:first-child{
+    margin-top: 0px;
+  }
+  .barbody1 .bar .info{
+    margin-bottom: 5px;
+  }
+  .barbody1 .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
+  .barbody1 .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: #6665ee;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line.html span{
+    width: 90%;
+  }
+  .bar .progress-line.css span{
+    width: 60%;
+  }
+  .bar .progress-line.jquery span{
+    width: 85%;
+  }
+  .bar .progress-line.python span{
+    width: 50%;
+  }
+  .bar .progress-line.mysql span{
+    width: 75%;
+  }
+  .progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+  }
+  .progress-line.html span::after{
+    content: "90%";
+  }
+  .progress-line.css span::after{
+    content: "60%";
+  }
+  .progress-line.jquery span::after{
+    content: "85%";
+  }
+  .progress-line.python span::after{
+    content: "50%";
+  }
+  .progress-line.mysql span::after{
+    content: "75%";
+  }
+
+
+/*
 .skills{
     align-items: center;
     justify-content: center;
@@ -208,6 +373,38 @@ section{
     border-radius: 20px;
     height: 2vh;
 }
+           <div class="body1">
+                <ul>
+                    <li>
+                        HTML
+                        <div class="container">
+                            <div class="html"></div>
+                        </div>
+                    </li>
+                    <li>
+                        CSS
+                        <div class="container">
+                            <div class="css"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="body2">
+                <ul>
+                    <li>
+                        JS
+                        <div class="container">
+                            <div class="js"></div>
+                        </div>
+                    </li>                    <li>
+                        VIDEO EDIT
+                        <div class="container">
+                            <div class="video-edit"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+*/
 
 @media only screen and (max-width: 1024px) { /*1024den kucukse*/
     .headline2,.headline3{

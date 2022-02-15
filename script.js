@@ -34,7 +34,7 @@ function myFunction(x) {
         .fromTo(hamburger,0.5,{opacity:0, x:-30},{opacity:1, x:0},'-=0.5')
         .fromTo(headline,0.5,{opacity:0, y:100},{opacity:1, y:-150},'-=0.5')
         .fromTo(headline2,1,{opacity:0, y:100},{opacity:1, y:-50, x:-25})
-        .fromTo(headline3,1,{opacity:0, y:100},{opacity:1, y:-25, x:-25},'-=0.5')
+        .fromTo(headline3,1,{opacity:0, y:100},{opacity:1, y:-20, x:-25},'-=0.5')
         .fromTo(sociallist,1,{opacity:0},{opacity:1})
         .fromTo(content,1,{opacity:0},{opacity:1})
     }
