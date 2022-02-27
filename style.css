@@ -4,6 +4,47 @@
     box-sizing: border-box;
 }
 
+body{
+  color: #3d4451;
+  background:#efefef;
+}
+::selection{
+  color: #fff;
+  background: #6665ee;
+}
+
+
+.myBtn {
+    
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #6665ee; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  transform : scale(0,0); /* Hidden by default */
+  transition: transform 0.5s;
+}
+
+.animate{
+  transform: scale(1,1);
+  transition: transform 0.5s;
+}
+
+.myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: white; /* Set a background color */
+  color: #6665ee; /* Text color */
+  border: 2px solid #6665ee;
+  transform: scale(1.2,1.2);
+  transition: transform 0.2s;
+}
 
 .slider{
     position: absolute;
@@ -12,7 +53,7 @@
     width: 100%;
     height:100vh;
 /*    background: #4B77BE ;*/
-    background: linear-gradient(#4B77BE,#fff);
+    background: linear-gradient(#4B77BE,#efefef);
     z-index: -1;
 }
 
@@ -43,7 +84,7 @@ nav{
     justify-self: end;
 }
 
-section{
+.head{
     display: flex;
     height: 80vh;
     justify-content: center;
@@ -95,7 +136,7 @@ section{
     margin:0 auto;
     text-align: center;
     width: 80%;
-    background-color: white;
+    background-color: #efefef;
     justify-content: center;
     align-items: center;
 }
@@ -125,7 +166,6 @@ section{
     
 }
 
-
 .whoami{
     font-family: 'Montserrat', sans-serif;
     color: #333;
@@ -133,278 +173,170 @@ section{
     font-weight: 300;
     line-height: 1.8;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     padding-left: 5%;
     padding-right: 5%;
 }
 
-.barbody1{
-    justify-content: left;
-    align-items: left;
-    text-align: left;
-    padding: 25px 30px;
-    display: grid;
-    height: 100%;
-    place-items: center;
-    width: 600px;
-    background-color: white;
-    border:10px solid #4B77BE;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+.skill-header{
+  font-size:30px; margin-bottom: 30px;
 }
 
-.barbody1 .bar{
-    margin: 20px 0;
-}
-
-.barbody1 .bar .info span{
-    font-size: 17px;
-    font-weight: 500;
-}
-
-.barbody1 .bar .progress-line{
-    height: 10px;
-    width: 100%;
-    background-color: #f0f0f0;
-}
-*/
-
-html,body{
-    display: grid;
-    height: 100%;
-    place-items: center;
-    
-  }
-  ::selection{
-    color: #fff;
-    background: #6665ee;
-  }
-  .skill-barbarbody1{
-    padding: 25px 30px;
-    width: 600px;
-    background: #fff;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
-    border-radius: 10px;
-  }
-  .barbody1 .bar{
-    margin: 20px 0;
-  }
-  .barbody1 .bar:first-child{
-    margin-top: 0px;
-  }
-  .barbody1 .bar .info{
-    margin-bottom: 5px;
-  }
-  .barbody1 .bar .info span{
-    font-weight: 500;
-    font-size: 17px;
-    opacity: 0;
-    animation: showText 0.5s 1s linear forwards;
-  }
-  @keyframes showText {
-    100%{
-      opacity: 1;
-    }
-  }
-  .barbody1 .bar .progress-line{
-    height: 10px;
-    width: 100%;
-    background: #f0f0f0;
-    position: relative;
-    transform: scaleX(0);
-    transform-origin: left;
-    border-radius: 10px;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
-                0 1px rgba(255,255,255,0.8);
-    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
-  }
-  @keyframes animate {
-    100%{
-      transform: scaleX(1);
-    }
-  }
-  .bar .progress-line span{
-    height: 100%;
-    position: absolute;
-    border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    background-color: #6665ee;
-    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
-  }
-  .bar .progress-line.html span{
-    width: 90%;
-  }
-  .bar .progress-line.css span{
-    width: 60%;
-  }
-  .bar .progress-line.jquery span{
-    width: 85%;
-  }
-  .bar .progress-line.python span{
-    width: 50%;
-  }
-  .bar .progress-line.mysql span{
-    width: 75%;
-  }
-  .progress-line span::before{
-    position: absolute;
-    content: "";
-    top: -10px;
-    right: 0;
-    height: 0;
-    width: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #000;
-    opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
-  }
-  .progress-line span::after{
-    position: absolute;
-    top: -28px;
-    right: 0;
-    font-weight: 500;
-    background: #000;
-    color: #fff;
-    padding: 1px 8px;
-    font-size: 12px;
-    border-radius: 3px;
-    opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
-  }
-  @keyframes showText2 {
-    100%{
-      opacity: 1;
-    }
-  }
-  .progress-line.html span::after{
-    content: "90%";
-  }
-  .progress-line.css span::after{
-    content: "60%";
-  }
-  .progress-line.jquery span::after{
-    content: "85%";
-  }
-  .progress-line.python span::after{
-    content: "50%";
-  }
-  .progress-line.mysql span::after{
-    content: "75%";
-  }
-
-
-/*
-.skills{
-    align-items: center;
-    justify-content: center;
-}
-
-.skills .head{
-    color: black;
-    font-size: 34px;
-    line-height: 1.2;
-    font-weight: 600;
-    text-align: center;
-    position: relative;
-    text-transform: uppercase;
-    margin-top: 50px;
-    margin-bottom: -10%;
-    padding-bottom: 3%;
-}
-
-
-.body1,.body2{
-    color:black;
-    width: 50%;
-    
-    margin-top: 5%;
-    padding: 20px;
-}
-
-.body1{
+.barbody1 , .barbody2{
+    display: flex grid;
     float:left;
-}
-.body2{
-    float:right;
-}
-
-.body1 li,.body2 li{
-    position: relative;
-    list-style: none;
-    margin: 5% 0 5%;
-    font-weight: 500;
-    text-transform: uppercase;
+    justify-content: center;
     text-align: left;
-}
-
-.container {
-    margin: 3% 0;
-    width: 100%;
-    height: 2vh;
-    background-color: rgb(231, 231, 231);
-    border-radius: 20px;
-    
- }
-
-.html{
-    width: 70%;
-    background-color: black;
-    border-radius: 20px;
-    height: 2vh;
-}
-
-.css{
+    padding: 25px 30px;
+    height: 100%;
     width: 50%;
-    background-color: black;
+    background-color: #efefef;
+    border:2px solid rgba(102, 101, 238, 0.7);
     border-radius: 20px;
-    height: 2vh;
+    margin-bottom:50px;
+    
 }
-.js{
-    width: 10%;
-    background-color: black;
-    border-radius: 20px;
-    height: 2vh;
+
+.barbody1{
+  margin-bottom: 50px;
+  border-top:5px solid rgba(102, 101, 238, 0.7);
+  border-radius: 20px 0 0 20px;
+  border-right: 0;
+  box-shadow: rgba(102, 101, 238, 0.4) -5px 5px, rgba(102, 101, 238, 0.3) -10px 10px, rgba(102, 101, 238, 0.2) -15px 15px, rgba(102, 101, 238, 0.1) -20px 20px, rgba(102, 101, 238, 0.05) -25px 25px;
 }
-.video-edit{
-    width: 38%;
-    background-color: black;
-    border-radius: 20px;
-    height: 2vh;
+.barbody2{
+  border-top:5px solid rgba(102, 101, 238, 0.7);
+  border-radius: 0 20px 20px 0;
+  border-left: 0;
+  box-shadow: rgba(102, 101, 238, 0.4) 5px 5px, rgba(102, 101, 238, 0.3) 10px 10px, rgba(102, 101, 238, 0.2) 15px 15px, rgba(102, 101, 238, 0.1) 20px 20px, rgba(102, 101, 238, 0.05) 25px 25px;
 }
-           <div class="body1">
-                <ul>
-                    <li>
-                        HTML
-                        <div class="container">
-                            <div class="html"></div>
-                        </div>
-                    </li>
-                    <li>
-                        CSS
-                        <div class="container">
-                            <div class="css"></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="body2">
-                <ul>
-                    <li>
-                        JS
-                        <div class="container">
-                            <div class="js"></div>
-                        </div>
-                    </li>                    <li>
-                        VIDEO EDIT
-                        <div class="container">
-                            <div class="video-edit"></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-*/
+
+.barbody1 .bar,.barbody2 .bar{
+    margin: 30px 0;
+}
+
+.barbody1 .bar .info span,.barbody2 .bar .info span{
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.barbody1 .bar:first-child,.barbody2 .bar:first-child{
+  margin-top: 0px;
+}
+
+.barbody1 .bar .info,.barbody2 .bar .info{
+  margin-bottom: 5px;
+}
+
+.barbody1 .bar .progress-line,.barbody2 .bar .progress-line{
+  height: 15px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  border-radius: 10px;
+}
+
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform-origin: left;
+  background-color: #6665ee;
+  
+}
+.bar .progress-line.html span{
+  width: 90%;
+}
+.bar .progress-line.css span{
+  width: 60%;
+}
+.bar .progress-line.js span{
+  width: 30%;
+}
+.bar .progress-line.python span{
+  width: 50%;
+}
+.bar .progress-line.java span{
+  width: 5%;
+}
+.bar .progress-line.fotovid span{
+  width: 50%;
+}
+.bar .progress-line.c span{
+  width: 30%;
+}
+.bar .progress-line.jquery span{
+  width: 1%;
+}
+
+.skill-header{
+  margin-top: 40px;
+}
+
+.blog{
+  margin-top: 45%;
+}
+.blog h2{
+    font-size:50px; 
+}
+
+.blogcontent{
+  margin:5% auto 0;
+  width: 95%;
+  height: 300px;
+  background: white;
+}
+
+.blog button{
+  margin-top: 0px;
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #6665ee; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 14px; /* Increase font size */
+
+}
+
+.blog button:hover{
+  background-color: whitesmoke; /* Set a background color */
+  color: #6665ee; /* Text color */
+  border: 2px solid #6665ee;
+}
+
+.media{
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  font-size: 25px;
+  padding: 15px;
+  background: white;
+}
+
+
+.media h2{
+  margin:20px
+}
+
+.iframe{ 
+  margin: 0 auto;;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.responsive-iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+}
 
 @media only screen and (max-width: 1024px) { /*1024den kucukse*/
     .headline2,.headline3{
@@ -418,7 +350,7 @@ html,body{
     }
   }
 
-@media only screen and (max-width: 700px) { /*700den kucukse*/
+@media only screen and (max-width: 768px) { /*768den kucukse*/
     .headline2,.headline3{
         font-family: 'DM Serif Display', serif;
         position: absolute;
@@ -427,5 +359,38 @@ html,body{
         font-size: 15px;
         transform: translate(-20%,-70%);
         color: black;
+    }
+    .skill-header{
+      font-size:20px; margin-bottom: 30px;
+    }
+
+    .barbody1 , .barbody2{
+      display: grid;
+      justify-content: left;
+      text-align: left;
+      padding: 25px 30px;
+      height: 100%;
+      width: 100%;
+      background-color: #efefef;
+      border:2px solid rgba(102, 101, 238, 0.7);
+      border-radius: 20px;
+      margin-bottom:50px;   
+    }
+
+    .barbody1{
+      box-shadow: rgba(102, 101, 238, 0.4) 5px 5px, rgba(102, 101, 238, 0.3) 10px 10px, rgba(102, 101, 238, 0.2) 15px 15px, rgba(102, 101, 238, 0.1) 20px 20px, rgba(102, 101, 238, 0.05) 25px 25px;
+    }
+
+    .barbody2{
+      box-shadow: rgba(102, 101, 238, 0.4) 5px 5px, rgba(102, 101, 238, 0.3) 10px 10px, rgba(102, 101, 238, 0.2) 15px 15px, rgba(102, 101, 238, 0.1) 20px 20px, rgba(102, 101, 238, 0.05) 25px 25px;
+    }
+
+    .media{
+      font-size: 15px;
+      
+    }
+    
+    .media h2{
+      margin:5px 0 10px; 
     }
   }
