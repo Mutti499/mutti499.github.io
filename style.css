@@ -275,7 +275,7 @@ nav{
 }
 
 .blog{
-  margin-top: 45%;
+  margin-top: 200px
 }
 .blog h2{
     font-size:50px; 
@@ -283,7 +283,9 @@ nav{
 
 .blogcontent{
   margin:5% auto 0;
-  width: 95%;
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid #6665ee;
   height: 300px;
   background: white;
 }
@@ -313,19 +315,23 @@ nav{
   font-size: 25px;
   padding: 15px;
   background: white;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 2px solid #6665ee;
 }
-
 
 .media h2{
   margin:20px
 }
 
 .iframe{ 
-  margin: 0 auto;;
+  margin: 0 auto 0;
   position: relative;
   overflow: hidden;
+  max-width: 900px;
+  max-height: 300px ;
   width: 100%;
-  padding-top: 56.25%;
+  padding-top: 550px;
 }
 .responsive-iframe{
   position: absolute;
@@ -335,7 +341,8 @@ nav{
   right: 0;
   width: 100%;
   height: 100%;
-
+  max-width: 900px;
+  max-height: 500px ;
 }
 
 @media only screen and (max-width: 1024px) { /*1024den kucukse*/
@@ -347,6 +354,18 @@ nav{
         font-size: 18px;
         transform: translate(-20%,-70%);
         color: black;
+    }
+    .blog{
+      margin-top: 45%;
+    }
+    .iframe{ 
+      margin: 0 auto 0;
+      position: relative;
+      overflow: hidden;
+      max-width: 900px;
+      max-height: 300px ;
+      width: 100%;
+      padding-top: 56.25%;
     }
   }
 
@@ -385,6 +404,10 @@ nav{
       box-shadow: rgba(102, 101, 238, 0.4) 5px 5px, rgba(102, 101, 238, 0.3) 10px 10px, rgba(102, 101, 238, 0.2) 15px 15px, rgba(102, 101, 238, 0.1) 20px 20px, rgba(102, 101, 238, 0.05) 25px 25px;
     }
 
+    .blog{
+      margin-top: 45%;
+    }
+
     .media{
       font-size: 15px;
       
@@ -392,5 +415,15 @@ nav{
     
     .media h2{
       margin:5px 0 10px; 
+    }
+
+    .iframe{ 
+      margin: 0 auto 0;
+      position: relative;
+      overflow: hidden;
+      max-width: 900px;
+      max-height: 300px ;
+      width: 100%;
+      padding-top: 56.25%;
     }
   }

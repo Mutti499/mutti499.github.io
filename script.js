@@ -1,4 +1,4 @@
-/*
+
 const hero = document.querySelector('.hero')
 const slider = document.querySelector('.slider')
 const logo = document.querySelector('#logo')
@@ -43,7 +43,7 @@ function myFunction(x) {
   
 var x = window.matchMedia("(max-width: 750px)")
 myFunction(x) // Call listener function at run time
-*/
+
 
 //Get the button:
 mybutton = document.querySelector(".myBtn");
