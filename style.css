@@ -5,6 +5,7 @@
 }
 
 body{
+  line-height: 1.5;
   color: #3d4451;
   background:#efefef;
 }
@@ -261,13 +262,13 @@ nav{
   width: 5%;
 }
 .bar .progress-line.fotovid span{
-  width: 50%;
+  width: 40%;
 }
 .bar .progress-line.c span{
   width: 30%;
 }
 .bar .progress-line.jquery span{
-  width: 1%;
+  width: 50%;
 }
 
 .skill-header{
@@ -309,7 +310,7 @@ nav{
   border: 2px solid #6665ee;
 }
 
-.media{
+.youtube{
   font-family: 'Montserrat', sans-serif;
   color: #222;
   font-size: 25px;
@@ -320,12 +321,12 @@ nav{
   border: 2px solid #6665ee;
 }
 
-.media h2{
+.youtube h2{
   margin:20px
 }
 
 .iframe{ 
-  margin: 0 auto 0;
+  margin: 0 auto -3%;
   position: relative;
   overflow: hidden;
   max-width: 900px;
@@ -333,6 +334,7 @@ nav{
   width: 100%;
   padding-top: 550px;
 }
+
 .responsive-iframe{
   position: absolute;
   top: 0;
@@ -343,6 +345,88 @@ nav{
   height: 100%;
   max-width: 900px;
   max-height: 500px ;
+}
+
+
+.spotify{
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  font-size: 25px;
+  padding: 15px;
+  background: white;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 2px solid #6665ee;
+}
+
+.spotify span{
+  font-family: 'Jost', sans-serif;
+  display: block;
+  text-align: left;
+  padding: 15px;
+  font-weight: 700;
+  color: #0a0a0a;
+  font-size: 0.75em;
+}
+.spotify span img{
+  padding:5px; 
+  vertical-align: middle; 
+  width:45px; 
+  height:45px;
+ 
+}
+.spotify img{
+  opacity: 1;
+  object-fit: cover;
+  cursor: pointer;
+  width: 105px;
+  height: 105px;
+  display: inline-flex;
+  padding: 5px;
+}
+
+.calismalar{
+ 
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+    font-size: 25px;
+    padding: 15px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 2px solid #6665ee;
+  
+}
+.swiper {
+  width: 70%;
+  height: 70%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 1024px) { /*1024den kucukse*/
@@ -382,7 +466,9 @@ nav{
     .skill-header{
       font-size:20px; margin-bottom: 30px;
     }
-
+    .content{
+      width:90%
+    }
     .barbody1 , .barbody2{
       display: grid;
       justify-content: left;
@@ -408,12 +494,12 @@ nav{
       margin-top: 45%;
     }
 
-    .media{
+    .youtube{
       font-size: 15px;
       
     }
     
-    .media h2{
+    .youtube h2{
       margin:5px 0 10px; 
     }
 

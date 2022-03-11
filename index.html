@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat&family=Sacramento&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&family=Montserrat&family=Sacramento&family=Yellowtail&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico">
     <title>Mutti</title>
     
 </head>
 <body>
-    <button onclick="topFunction()" class="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" class="myBtn" title="Go to top">⬆︎⬆︎</button>
     <header>
         <nav>
             <div class="logo">
@@ -60,7 +62,7 @@
 
         <div class="whoami">
             <h2 style='font-size:50px; text-align:center; color:#4B77BE'>Şimdi bi kere..</h2>
-            <P>(ONEMLI NOT: SITE HALA HAZIR DEGIL. CABALIYORUM CABALIYORUMM.) </P>
+            <P>(ONEMLI NOT: SITE HALA HAZIR DEGIL. CABALIYORUM CABALIYORUMM.) </p>
             <p>Adım Mustafa Atak ama Mutti adını kullanıyorum. Boğaziçi Üniversitesi Bilgisayar Mühendisliği 1. sınıf öğrencisiyim ve şimdilik pek bir başarım olmadığı için bu siteyi portfolyo olarak kullanamasam da blog işlerimde çok işe yarayacak gibi duruyor. İnstagramda aktif kitap, film, dizi, müzik yorumlamaları yapıyorum. Bu site sayesinde daha fazla insana daha uzun yazılarla ulaşmayı planlıyorum. Ayrıca Front-end ve Back-end Web Development konusunda kendimi geliştirmeye calışıyorum. Site kurma gibi herhangi bir yardıma ihtiyacınız olursa <span><a href="#iletişim">iletişim</a></span> kısmından bana ulaşabilirsiniz. Her türlü tecrübeye açığım..</p>
         </div>
         
@@ -119,7 +121,7 @@
                 </div>
                 <div class="bar js">
                     <div class="info">
-                        <span>JQuery</span>
+                        <span>Photoshop</span>
                     </div>
                     <div class="progress-line jquery"><span></span></div>
                 </div>
@@ -140,12 +142,35 @@
                 </div>
                 
             </div>
-            <div class="media">
+            <div class="youtube">
                 <h2>Youtube Celeste Serim</h2>
                 <div class="iframe"><iframe class="responsive-iframe"  src="https://www.youtube.com/embed/videoseries?list=PL9kx2AomsuCCq9irgN8PoQfvuodoHjwlD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
+            <div class="spotify">
+                <span><img src="blog-img/spotify.png">Spotify Çalma Listelerim</span>
+                <a href="https://open.spotify.com/playlist/39yElSPAdw9KDjyJ8uRccl?si=98680975bc6549b7" target="_blank"><img src="blog-img/spotifykapak/1 - Gitche v2.png" alt=""></a>
+                <a href="https://open.spotify.com/playlist/10n5E2R4GGiMri1S6btwtD?si=d31e8600872546b1" target="_blank"><img src="blog-img/spotifykapak/2 - Aurora v2.png" alt=""></a>
+                <a href="https://open.spotify.com/playlist/1aSUqzPPmwZjXqQE0kn8fj?si=5c651a61e79e4529" target="_blank"><img src="blog-img/spotifykapak/3 - Karmaşık Hisler v3.png" alt=""></a>
+                <a href="https://open.spotify.com/playlist/6QFld7qjX1OSvnOKn6dgdT?si=50143ba224174b8d" target="_blank"><img src="blog-img/spotifykapak/4 - Minecraft v4.png" alt=""></a>
+                <a href="https://open.spotify.com/playlist/3RQSHsSpSZRNBSlf2gtASu?si=771bc93556874e32" target="_blank"><img src="blog-img/spotifykapak/5 - Love v5.png" alt=""></a>
+                <a href="https://open.spotify.com/playlist/3asf0YZlFQyV671smpzdfc?si=b3367371c1d54d2b" target="_blank"><img src="blog-img/spotifykapak/6 - Peace v2.png" alt=""></a>
+                <a href="https://open.spotify.com/playlist/3Y1Apr5OYb1LrHrIyiMkbf?si=6a615bde1cf9422b" target="_blank"><img src="blog-img/spotifykapak/7 - bir yatakta v2.png" alt=""></a>
+                <a href="https://open.spotify.com/playlist/3CttPkp1o620vFVolNHmCG?si=7c074cfe21b1402b" target="_blank"><img src="blog-img/spotifykapak/8 - 50's musicbox v2.png" alt=""></a>
+            </div>
+            <!--
         </section>
-        <section class="job"></section>
+        <section class="job">
+            <div class="calismalar">   
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Buraya ekleyecek bir proje yapmadım.. Henüz!</div>
+                        <div class="swiper-slide"><h1>Menekşe Yoga</h1><p>https://menekseyoga.wixsite.com/turkce</p></div>
+                        <div class="swiper-slide">Buraya ekleyecek bir proje yapmadım.. Henüz!</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
 
         <h1 style="margin-top:1000px">hel</h1>
         <h1>hel</h1>
@@ -154,14 +179,14 @@
         <h1>hel</h1>
         <h1>hel</h1>
         <h1>hel</h1>
-            
+          -->  
     </div>
-
+    
 
     
 
 
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>

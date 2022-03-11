@@ -65,3 +65,33 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+
+function myFunction(a) {
+  if (a.matches) { // If media query matches
+    document.body.style.backgroundColor = "yellow";
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  } else {
+   document.body.style.backgroundColor = "pink";
+   var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
+}
+
+var a = window.matchMedia("(max-width: 700px)")
+myFunction(a) // Call listener function at run time
+a.addListener(myFunction) // Attach listener function on state changes
