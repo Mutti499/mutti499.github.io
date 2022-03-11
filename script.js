@@ -1,4 +1,3 @@
-
 const hero = document.querySelector('.hero')
 const slider = document.querySelector('.slider')
 const logo = document.querySelector('#logo')
@@ -67,7 +66,7 @@ function topFunction() {
 }
 
 
-
+/*
 function myFunction(a) {
   if (a.matches) { // If media query matches
     document.body.style.backgroundColor = "yellow";
@@ -95,3 +94,4 @@ function myFunction(a) {
 var a = window.matchMedia("(max-width: 700px)")
 myFunction(a) // Call listener function at run time
 a.addListener(myFunction) // Attach listener function on state changes
+*/
