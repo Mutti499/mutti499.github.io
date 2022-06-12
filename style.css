@@ -148,7 +148,9 @@ nav{
     margin: -2% auto 0;
     width: 85%;
     background: #6b96d6;
-    height:7vh
+    height:7vh;
+    border: 5px solid #6b96d6;
+    border-radius: 15px;
 }
 
 .sociallist img{
@@ -379,54 +381,74 @@ nav{
   opacity: 1;
   object-fit: cover;
   cursor: pointer;
-  width: 105px;
-  height: 105px;
+  width: 150px;
+  height: 150px;
   display: inline-flex;
   padding: 5px;
 }
 
-.calismalar{
- 
-    font-family: 'Montserrat', sans-serif;
-    color: #222;
-    font-size: 25px;
-    padding: 15px;
-    background: white;
-    margin: 0 auto;
-    border-radius: 15px;
-    border: 2px solid #6665ee;
-  
+
+.calismalar-header{
+  font-size:50px;
+  margin: 50px;
 }
+
+.blogcuk {
+  border: 2px solid #6665ee;
+  border-top: 0;
+  border-radius:  0 0 15px 15px;
+  margin-bottom: 10px;
+}
+/*swiper for first part */
+
 .swiper {
-  width: 70%;
-  height: 70%;
+  padding: 15px;
+  border: 2px solid #6665ee;
+  border-bottom: 0;
+  border-radius: 15px 15px 0 0;
+  background: #eee;
+  font-family:'Montserrat', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+
+}
+.job .swiper {
+  border: 2px solid #6665ee;
+  border-radius: 15px;  
 }
 
 .swiper-slide {
+  margin: auto;
+  padding: 10px;
   text-align: center;
   font-size: 18px;
   background: #fff;
-
+  border-radius:15px;
+  border: 1px solid #6665ee;
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 
+
+.swiper-slide .description{
+  text-align: left;
+}
+.swiper-slide .description .deneme{
+  padding: 0px;
+  font-size: 80%;
+}
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
+  height: 200px;
+  width: 200px;
   object-fit: cover;
+  border-radius: 16px;
+  margin: 0 auto;
+  display: block;
 }
 
 @media only screen and (max-width: 1024px) { /*1024den kucukse*/
@@ -463,7 +485,7 @@ nav{
         transform: translate(-20%,-70%);
         color: black;
     }
-    .skill-header{
+    .skill-header, .calismalar-header{
       font-size:20px; margin-bottom: 30px;
     }
     .content{

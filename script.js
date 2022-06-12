@@ -1,3 +1,4 @@
+
 const hero = document.querySelector('.hero')
 const slider = document.querySelector('.slider')
 const logo = document.querySelector('#logo')
@@ -65,6 +66,54 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    "@0.85": {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    "@1.00": {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    /*
+     Daha buyudugunde 4 slayt olmasini istersen ac
+    "@1.50": {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+    */
+  },
+});
+
+
+var swiper2 = new Swiper(".mySwiper2", {
+
+  cssMode: true,
+
+  pagination: {
+    el: ".swiper-pagination2",
+    type: "fraction",
+    clickable: false
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  mousewheel: true,
+  keyboard: true,
+ 
+});
 
 /*
 function myFunction(a) {

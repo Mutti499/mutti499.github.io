@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&family=Montserrat&family=Sacramento&family=Yellowtail&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico">
@@ -73,6 +74,10 @@
                     Ne biliyorum?
                     <font color="#6665ee"> -</font>
                 </h2>
+                <h2 style=" font-size:20px;">
+                    (Ne kadar inanırsan)
+                </h2>
+
             </div>
             <div class="barbody1">
                 <div class="bar ">
@@ -136,11 +141,23 @@
                     BLOG
                     <font color="#6665ee"> -</font>
                 </h2>
-                <div class="blogcontent" style="text-align:center; font-size: 50px; padding-top: 10%">
-                    Burada bir şey yok, ŞİMDİLİK!
-                    <button style="display:block; margin:20px auto;">Daha fazlası için..</button>
+                <div class="swiper swiper2 mySwiper mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">"İçerik planlanıyor"</div>
+                      <div class="swiper-slide">"(İçerik gelene kadar) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>       
+                      <div class="swiper-slide">"(İçerik gelene kadar) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+
+              
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination swiper-pagination2"></div>
+
+                  </div>
+                  <div class="blogcuk">
+
+                  <button style="display:block; margin:0px auto 5px;">Daha fazlası için..</button>
                 </div>
-                
             </div>
             <div class="youtube">
                 <h2>Youtube Celeste Serim</h2>
@@ -148,30 +165,49 @@
             </div>
             <div class="spotify">
                 <span><img src="blog-img/spotify.png">Spotify Çalma Listelerim</span>
-                <a href="https://open.spotify.com/playlist/39yElSPAdw9KDjyJ8uRccl?si=98680975bc6549b7" target="_blank"><img src="blog-img/spotifykapak/1 - Gitche v2.png" alt=""></a>
-                <a href="https://open.spotify.com/playlist/10n5E2R4GGiMri1S6btwtD?si=d31e8600872546b1" target="_blank"><img src="blog-img/spotifykapak/2 - Aurora v2.png" alt=""></a>
-                <a href="https://open.spotify.com/playlist/1aSUqzPPmwZjXqQE0kn8fj?si=5c651a61e79e4529" target="_blank"><img src="blog-img/spotifykapak/3 - Karmaşık Hisler v3.png" alt=""></a>
-                <a href="https://open.spotify.com/playlist/6QFld7qjX1OSvnOKn6dgdT?si=50143ba224174b8d" target="_blank"><img src="blog-img/spotifykapak/4 - Minecraft v4.png" alt=""></a>
-                <a href="https://open.spotify.com/playlist/3RQSHsSpSZRNBSlf2gtASu?si=771bc93556874e32" target="_blank"><img src="blog-img/spotifykapak/5 - Love v5.png" alt=""></a>
-                <a href="https://open.spotify.com/playlist/3asf0YZlFQyV671smpzdfc?si=b3367371c1d54d2b" target="_blank"><img src="blog-img/spotifykapak/6 - Peace v2.png" alt=""></a>
-                <a href="https://open.spotify.com/playlist/3Y1Apr5OYb1LrHrIyiMkbf?si=6a615bde1cf9422b" target="_blank"><img src="blog-img/spotifykapak/7 - bir yatakta v2.png" alt=""></a>
-                <a href="https://open.spotify.com/playlist/3CttPkp1o620vFVolNHmCG?si=7c074cfe21b1402b" target="_blank"><img src="blog-img/spotifykapak/8 - 50's musicbox v2.png" alt=""></a>
+                <a href="https://open.spotify.com/playlist/39yElSPAdw9KDjyJ8uRccl?si=98680975bc6549b7" target="_blank"><img src="blog-img/spotifykapak/reducedssize/1 - Gitche v2.jpg" alt=""></a>
+                <a href="https://open.spotify.com/playlist/10n5E2R4GGiMri1S6btwtD?si=d31e8600872546b1" target="_blank"><img src="blog-img/spotifykapak/reducedssize/2 - Aurora v2.jpg" alt=""></a>
+                <a href="https://open.spotify.com/playlist/1aSUqzPPmwZjXqQE0kn8fj?si=5c651a61e79e4529" target="_blank"><img src="blog-img/spotifykapak/reducedssize/3 - Karmaşık Hisler v3.jpg" alt=""></a>
+                <a href="https://open.spotify.com/playlist/6QFld7qjX1OSvnOKn6dgdT?si=50143ba224174b8d" target="_blank"><img src="blog-img/spotifykapak/reducedssize/4 - Minecraft v4.jpg" alt=""></a>
+                <a href="https://open.spotify.com/playlist/3RQSHsSpSZRNBSlf2gtASu?si=771bc93556874e32" target="_blank"><img src="blog-img/spotifykapak/reducedssize/5 - Love v5.jpg" alt=""></a>
+                <a href="https://open.spotify.com/playlist/3asf0YZlFQyV671smpzdfc?si=b3367371c1d54d2b" target="_blank"><img src="blog-img/spotifykapak/reducedssize/6 - Peace v2.jpg" alt=""></a>
+                <a href="https://open.spotify.com/playlist/3Y1Apr5OYb1LrHrIyiMkbf?si=6a615bde1cf9422b" target="_blank"><img src="blog-img/spotifykapak/reducedssize/7 - bir yatakta v2.jpg" alt=""></a>
+                <a href="https://open.spotify.com/playlist/3CttPkp1o620vFVolNHmCG?si=7c074cfe21b1402b" target="_blank"><img src="blog-img/spotifykapak/reducedssize/8 - 50's musicbox v2.jpg" alt=""></a>
             </div>
-            <!--
+            
         </section>
         <section class="job">
             <div class="calismalar">   
+                <h2  class="calismalar-header">
+                    <font color="#6665ee">- </font>
+                    ÇALIŞMALARIM
+                    <font color="#6665ee"> -</font>
+                </h2>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <table>
+                            <tr>
+                            <td colspan="2"></br><b>Menekşe Yoga Web Site</b></td>
+                            </tr>
+                            <tr>
+                                <td class ="description">
+                                    <img style="border-radius:25px;" src="calismalarim-img/meneksecim.png" draggable="false"> <br><br>
+                                    <div class="deneme">
+                                    <b>Tarih</b>: 13 Ocak 2018 </br> <b>Hakkında</b>: Supdent öğrenciye destek platformudur.</br> Öğrencilerin ders notlarını ve ödevlerini girmesini sağlayan bir uygulamadır.</br><br><b>Bağlantı</b>: <a href="https://menekseyoga.wixsite.com/turkce" target="_blank" style="color:#fece1a">menekseyoga.wixsite.com/turkce</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </table>
+                        </div>
                         <div class="swiper-slide">Buraya ekleyecek bir proje yapmadım.. Henüz!</div>
-                        <div class="swiper-slide"><h1>Menekşe Yoga</h1><p>https://menekseyoga.wixsite.com/turkce</p></div>
                         <div class="swiper-slide">Buraya ekleyecek bir proje yapmadım.. Henüz!</div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
-
+        <!--
         <h1 style="margin-top:1000px">hel</h1>
         <h1>hel</h1>
         <h1>hel</h1>
