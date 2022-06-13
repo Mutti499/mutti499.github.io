@@ -66,9 +66,10 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-var swiper = new Swiper(".mySwiper", {
+var calismalarim = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
+  
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -96,24 +97,17 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
-var swiper2 = new Swiper(".mySwiper2", {
-
-  cssMode: true,
+var blog = new Swiper(".mySwiper2", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop:true,
 
   pagination: {
     el: ".swiper-pagination2",
-    type: "fraction",
-    clickable: false
+    clickable: false,
+  }
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  mousewheel: true,
-  keyboard: true,
- 
-});
+);
 
 /*
 function myFunction(a) {

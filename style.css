@@ -69,6 +69,7 @@ nav{
 }
 
 .logo{
+  font-family: 'DM Serif Display', serif;
     grid-column: 2/3;
     font-size: 25px;    
 }
@@ -399,7 +400,7 @@ nav{
   border-radius:  0 0 15px 15px;
   margin-bottom: 10px;
 }
-/*swiper for first part */
+/*swiper for both parts */
 
 .swiper {
   padding: 15px;
