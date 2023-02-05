@@ -26,7 +26,7 @@ body{
   background-color: #6665ee; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  padding: 12px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
   transform : scale(0,0); /* Hidden by default */
@@ -139,8 +139,6 @@ nav{
     text-align: center;
     width: 80%;
     background-color: #efefef;
-    justify-content: center;
-    align-items: center;
 }
 
 .sociallist{
@@ -256,21 +254,24 @@ nav{
   width: 60%;
 }
 .bar .progress-line.js span{
-  width: 30%;
+  width: 40%;
 }
 .bar .progress-line.python span{
   width: 50%;
 }
 .bar .progress-line.java span{
-  width: 5%;
+  width: 50%;
 }
 .bar .progress-line.fotovid span{
   width: 40%;
 }
 .bar .progress-line.c span{
-  width: 30%;
+  /* sql */
+  width: 20%;
+  
 }
 .bar .progress-line.jquery span{
+    /* Photoshop */
   width: 50%;
 }
 
@@ -391,15 +392,47 @@ nav{
 
 .calismalar-header{
   font-size:50px;
-  margin: 50px;
+  margin: 50px auto 20px;
 }
 
-.blogcuk {
+.projelerim{
+  background-color: #6665ee;
+  color: whitesmoke;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.blogcuk{
   border: 2px solid #6665ee;
   border-top: 0;
   border-radius:  0 0 15px 15px;
   margin-bottom: 10px;
 }
+
+#ytlink{
+
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.fcc-btn{
+  background-color: #6665ee;
+  color:white;
+  font-size: 0.6em;
+  border: 1px solid #6665ee;
+  border-radius: 10px;
+  padding: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fcc-btn:hover{
+  color: #6665ee;
+  background-color:white;
+}
+
+
 /*swiper for both parts */
 
 .swiper {
@@ -451,6 +484,108 @@ nav{
   margin: 0 auto;
   display: block;
 }
+
+
+.contact-head{
+  font-size: 50px;
+  margin: 50px auto 20px;
+}
+
+/* .contact{
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  font-size: 25px;
+  padding: 15px;
+  background: white;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 2px solid #6665ee;
+} */
+
+.contact .left{
+  width: 48%;
+  float: left;
+
+  color: #3d4451;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  font-size: 25px;
+  padding: 15px;
+  background: white;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 2px solid #6665ee;
+  font-size: 1em;
+  padding-left: 35px;
+
+}
+
+.contact .left h3{
+  font-weight: 700;
+  font-family: "Jost", sans-serif;
+  margin: 30px 0 15px 0px;
+  line-height: 1.1;
+      
+}
+
+.contact .left p{
+  font-size: 13px;
+  width: 85%;
+}
+
+
+.contact input, .contact textarea {
+  text-align: left;
+  width: 75%;
+  border: none;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 15px 15px 10px 5px;
+  margin: 10px auto 0 auto;
+  filter: blur(1px);
+}
+
+.contact .right{
+  width: 48%;
+  float: right;
+  
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  padding: 15px;
+  background: white;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 2px solid #6665ee;
+}
+
+
+
+.right td:first-child{
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.contact .right td{
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-bottom: 18px;
+  font-size: 14px;
+}
+.contact .mapp{
+  height: 266px;
+  width: 100%;
+
+}
+
+
+#footer {
+  font-size: large;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  float: left;
+  width: 100%;
+}
+
 
 @media only screen and (max-width: 1024px) { /*1024den kucukse*/
     .headline2,.headline3{
@@ -534,5 +669,30 @@ nav{
       max-height: 300px ;
       width: 100%;
       padding-top: 56.25%;
+    }
+
+
+    .contact .left,.contact .right {
+      float: none;
+      width: 98%;
+    }
+
+    .contact .left{
+      border-bottom: 0;
+      border-radius: 15px 15px 2px 2px;
+    }
+    .contact .right{
+      border-top: 0;
+      border-radius: 2px 2px 15px 15px;
+      padding-top: 0;
+    }
+    .contact .right table{
+      padding-top: 3%;
+
+    }
+    .contact .right td:first-child{
+      padding: 5px 30px 25px 30px;
+
+      padding-bottom: 25px;
     }
   }

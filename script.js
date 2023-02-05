@@ -83,7 +83,7 @@ var calismalarim = new Swiper(".mySwiper", {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    "@1.00": {
+    "@1.45": {
       slidesPerView: 3,
       spaceBetween: 40,
     },
