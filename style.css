@@ -720,6 +720,154 @@ margin-bottom: 5px;
     }
   }
 
+  .blog-section {
+    padding: 40px 0;
+    margin: 30px 0;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .blog-section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 20px;
+  }
+  
+  .blog-card {
+    width: 100%;
+    max-width: 350px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(102, 101, 238, 0.2);
+  }
+  
+  .blog-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .blog-card:hover .blog-img img {
+    transform: scale(1.1);
+  }
+  
+  .blog-content {
+    padding: 20px;
+  }
+  
+  .blog-date {
+    font-size: 14px;
+    color: #6665ee;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .blog-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #333;
+  }
+  
+  .blog-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .blog-link {
+    display: inline-block;
+    color: #6665ee;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .blog-link:hover {
+    color: #4b47e2;
+  }
+  
+  .blog-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    gap: 10px;
+  }
+  
+  .blog-nav-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #6665ee;
+    color: #6665ee;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .blog-nav-btn.active, .blog-nav-btn:hover {
+    background: #6665ee;
+    color: #fff;
+  }
+  
+  .blog-all-btn {
+    margin-left: 15px;
+    padding: 8px 20px;
+    background: #6665ee;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .blog-all-btn:hover {
+    background: #4b47e2;
+  }
+  
+  @media (max-width: 768px) {
+    .blog-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .blog-card {
+      max-width: 100%;
+    }
+  }
+  
+
 @media only screen and (max-width: 375px) {
   .contact .right td:first-child{
     padding: 5px 5px 25px 0px;
